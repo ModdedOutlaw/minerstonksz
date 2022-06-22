@@ -11,10 +11,17 @@ a{
   color:rgb(255, 65, 198, 1);
 }
 
-a:hover{
-  font-family: 'Merriweather Sans', sans-serif;
+#link-wallet{
+  color: rgb(6, 255, 255);;
+}
+
+#link-wallet:hover{
   color:white;
-  text-decoration:underline;
+}
+
+a:hover{
+
+  text-decoration: underline;
   
 }
 
@@ -32,7 +39,7 @@ tr:nth-child(even) {background-color:rgb(255, 65, 198, 0.5)}
 
 
 .img {    
-  background: url(img/uplift-world-community-logo.png);
+  background: url(img/QmY2ugaBMjC8ZpUx4BbbjbZwkBj6E3RHQpSe1UtdoKfLYB.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size:cover;
@@ -42,6 +49,14 @@ tr:nth-child(even) {background-color:rgb(255, 65, 198, 0.5)}
   width: 100vw;
 }
 
+#img-shadow{
+  box-shadow: 0em 0em 0.3em 0.5em rgb(255, 65, 198, 1);
+}
+#p-description{
+  background-color: rgb(6, 255, 255,0.1);
+  border-radius: 5px;
+
+}
 body {
  
   font-size: 62.5%;
@@ -224,7 +239,7 @@ canvas {
   color: white;
 }
 
-.outputLeaderBoard{
+.outputMinerHolders{
   min-width: 40%;
   max-width:90%;
 
@@ -234,6 +249,18 @@ canvas {
   font-size: 1.4em;
   color: white;
   align-content: center;
+}
+
+#totalDrip{
+  font-size: 2em;
+  color: rgb(6, 255, 255);
+  background-color: rgb(33, 0, 81,0.4);
+  padding: 5px;
+}
+
+#drip-per{
+  font-size: .8em;
+  
 }
 
 
