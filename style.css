@@ -18,8 +18,16 @@ a:hover{
   
 }
 
+tr{
+  align-content: center;
+  align-items: center;
+}
+
+tr:nth-child(even) {background-color:rgb(255, 65, 198, 0.5)}
+
 #currentpage{
   color:rgb(255, 65, 198, 1);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 
@@ -67,7 +75,7 @@ canvas {
   transform: translateX(3%);
   position:absolute;
   
-  
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 
@@ -77,6 +85,17 @@ canvas {
   margin: auto;
   align-content: center;
   padding: 0em;
+  font-weight: 600;
+  color: white;
+}
+
+.footer{
+  text-align:right;
+  margin: auto;
+  align-content: center;
+  padding: 0em;
+  font-size: 1em;
+ 
   font-weight: 600;
   color: white;
 }
@@ -116,8 +135,8 @@ canvas {
 }
 
 .navbar-custom {
-  background-color: rgb(33, 0, 81);
-  padding: 0px;
+  background-color: rgb(33, 0, 81,0.9);
+  padding: 2px;
   margin: 0px;
   position: -webkit-sticky;
   position: sticky;
@@ -126,7 +145,7 @@ canvas {
 
 
 .navbar-nav{
-  font-size: 2.0em;
+  font-size: 1.5em;
 }
 
 #collapse
@@ -154,6 +173,15 @@ canvas {
   font-size: 1.2em;
   margin: auto;
 }
+
+
+#reward-type {
+  padding: 0.2em;
+  font-size: 0.6em;
+  margin: auto;
+}
+
+
 
 #brand-tag{
   font-size: 0.6em;
@@ -194,6 +222,18 @@ canvas {
   font-weight: 600;
   font-size: 1.4em;
   color: white;
+}
+
+.outputLeaderBoard{
+  min-width: 40%;
+  max-width:90%;
+
+  margin: auto;
+  padding: 0em;
+  font-weight: 600;
+  font-size: 1.4em;
+  color: white;
+  align-content: center;
 }
 
 
