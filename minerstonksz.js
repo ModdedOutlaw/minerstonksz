@@ -103,7 +103,7 @@ async function getHolders() {
 
     totalOutput.id = "totalDrip";
 
-    totalOutput.innerHTML += '<td colspan = 3 id="total-output">TOTAL OUTPUT: '+main_wallet.dripPerHour.toFixed(0)+' <span id="drip-per">/hr</span></td>';
+    totalOutput.innerHTML += '<td colspan = 2 id="total-output">TOTAL OUTPUT: '+main_wallet.dripPerHour.toFixed(0)+' <span id="drip-per">/hr</span></td>';
 
     section[0].appendChild(totalOutput);
 
@@ -111,7 +111,7 @@ async function getHolders() {
 
         let player = document.createElement('tr');
 
-        player.innerHTML += '<td>' + (m + 1) + '.</td><td><a id = "link-wallet" href="https://wax.atomichub.io/profile/' + holderArray[m].name + '?collection_name=upliftworld&order=desc&sort=transferred#inventory" target="_blank">' + holderArray[m].name + '</a></td> <td>' + holderArray[m].miner_count + '</td>';
+        player.innerHTML += '<td><a id = "link-wallet" href="https://wax.atomichub.io/profile/' + holderArray[m].name + '?collection_name=upliftworld&order=desc&sort=transferred#inventory" target="_blank">' + holderArray[m].name + '</a></td> <td>' + holderArray[m].miner_count + '</td>';
 
         section[0].appendChild(player);
     }
