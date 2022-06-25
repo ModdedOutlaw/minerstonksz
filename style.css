@@ -5,6 +5,18 @@
   font-family: 'Mulish', sans-serif;
 }
 
+table{
+  
+  border: 4px solid rgb(255, 65, 198, 1);
+  border-radius: 10px;
+  border-collapse:separate;
+
+}
+td{
+  padding-left:2em;
+  padding-right:2em;
+}
+
 a{
   font-family: 'Merriweather Sans', sans-serif;
   text-decoration: none;
@@ -39,7 +51,7 @@ tr:nth-child(even) {background-color:rgb(255, 65, 198, 0.5)}
 
 
 .img {    
-  background: url(img/QmY2ugaBMjC8ZpUx4BbbjbZwkBj6E3RHQpSe1UtdoKfLYB.png);
+  background: url(img/uplift-world-community-logo.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size:cover;
@@ -102,6 +114,10 @@ canvas {
   padding: 0em;
   font-weight: 600;
   color: white;
+}
+
+#header-landRewards{
+  line-height: 0%;
 }
 
 .footer{
@@ -240,30 +256,34 @@ canvas {
 }
 
 .outputMinerHolders{
-  min-width: 40%;
-  max-width:90%;
+  width:15em;
 
   margin: auto;
+
   padding: 0em;
   font-weight: 600;
   font-size: 1.4em;
   color: white;
   align-content: center;
+
 }
 
-#totalDrip{
-  font-size: 2em;
+
+
+
+.outputPayDate{
+ color: rgb(6, 255, 255);
+ margin: auto;
+ text-align: center;
+ align-content: center;
+}
+
+#total-output{
   color: rgb(6, 255, 255);
-  background-color: rgb(33, 0, 81,0.4);
-  padding: 5px;
+  margin: auto;
+  font-size: 1.2em;
+ 
 }
-
-#drip-per{
-  font-size: .8em;
-  
-}
-
-
 
 
 

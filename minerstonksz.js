@@ -16,6 +16,26 @@ async function fetchStonkszDripJSON() {
 
 }
 
+async function fetchUserDataJSON() {
+    const response = await fetch('https://tools.uplift.art:3033/v1/world/query/fetch-account', {
+        method: 'POST',
+        headers: {
+            'accept': 'application/json',
+            'cache-control': 'no-cache',
+            'content-type': 'application/json'
+        },
+        body: JSON.stringify({
+            'chainAccount': '3spaw.wam',
+            'chainType': 'WAX'
+        })
+    });
+
+    const user_data = await response.json();
+
+    return user_data;
+
+}
+
 
 async function getHolders() {
 
@@ -83,7 +103,7 @@ async function getHolders() {
 
     totalOutput.id = "totalDrip";
 
-    totalOutput.innerHTML += '<td colspan = 2>TOTAL OUTPUT: '+main_wallet.dripPerHour.toFixed(0)+' <span id="drip-per">/hr</span></td>';
+    totalOutput.innerHTML += '<td colspan = 3 id="total-output">TOTAL OUTPUT: '+main_wallet.dripPerHour.toFixed(0)+' <span id="drip-per">/hr</span></td>';
 
     section[0].appendChild(totalOutput);
 
@@ -96,7 +116,15 @@ async function getHolders() {
         section[0].appendChild(player);
     }
 
+    
 
+    await fetchUserDataJSON().then(user_data => {
+
+        
+        console.log(user_data);
+    });
+
+    
 
 }
 getHolders();
